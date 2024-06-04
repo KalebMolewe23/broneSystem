@@ -1,0 +1,105 @@
+body{
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.section-home{
+    min-height: 5vh;
+    padding: 3rem 9% 2rem;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.circle p:first-child {
+    margin-bottom: -10px; /* Margin bawah untuk 12 Februari 2024 */
+}
+
+.circle p:last-child {
+    margin-top: -25px; /* Margin atas untuk 12 Februari 2024 */
+}
+
+.circle strong {
+    font-weight: bold; /* Membuat angka 12 menjadi tebal */
+}
+
+.icon {
+    font-size: 15px; /* Ukuran ikon */
+    color: white; /* Warna ikon dan teks */
+    text-align: center; /* Penempatan ikon */
+}
+
+.login-button{
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius:10px;
+    text-decoration: none;
+    transition: 0.3s background color;
+    border: 2px solid black;
+}
+
+.login-button:hover {
+    background-color: #fff;
+}
+
+.signup-button{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius:10px;
+    text-decoration: none;
+    transition: 0.3s background color;
+}
+
+.signup-button:hover {
+    background-color: #000;
+}
+
+.navbar {
+    background-color: white; /* Mengatur warna latar belakang navbar menjadi putih */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: orange;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
