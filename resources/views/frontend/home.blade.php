@@ -17,7 +17,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
+    <div class="container">
         <a class="navbar-brand me-auto" href="#"><strong>BRONE</strong> <img src="{{ asset('assets/image/icon.png') }}" style="width:50px"></a>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -41,7 +41,7 @@
             </ul>
         </div>
         </div>
-        <a href="" class="login-button">Log In</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{ url('/auth') }}" class="login-button">Log In</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="" class="signup-button">Sign Up</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,53 +51,58 @@
 
     <!-- video content -->
     <section id="home">
-        <video width="1100px" height="500px" controls>
-            <source src="{{ asset('assets/video/drone.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="container">
+            <video width="1100px" height="500px" controls>
+                <source src="{{ asset('assets/video/drone.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
     <!-- menu 2 -->
     <section class="section-home" style="background-color:#222F3E">
-        <div class="row">
-            <div class="col">
-                <div class="icon">
-                    <center>
-                        <i class='bx bx-home' style='font-size: 40px; color: white;'></i><br>
-                        Home         
-                    </center>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="icon">
+                        <center>
+                            <i class='bx bx-home' style='font-size: 40px; color: white;'></i><br>
+                            Home         
+                        </center>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="icon">
-                    <center>
-                    <i class='bx bx-cog' style='font-size: 40px; color: white;'></i><br>
-                        Tentang         
-                    </center>
+                <div class="col">
+                    <div class="icon">
+                        <center>
+                        <i class='bx bx-cog' style='font-size: 40px; color: white;'></i><br>
+                            Tentang         
+                        </center>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="icon">
-                    <center>
-                    <i class='bx bxs-info-circle' style='font-size: 40px; color: white;'></i><br>
-                        Informasi         
-                    </center>
+                <div class="col">
+                    <div class="icon">
+                        <center>
+                        <i class='bx bxs-info-circle' style='font-size: 40px; color: white;'></i><br>
+                            Informasi         
+                        </center>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="icon">
-                    <center>
-                    <i class='bx bxs-user-voice' style='font-size: 40px; color: white;'></i></i><br>
-                        Layanan         
-                    </center>
+                <div class="col">
+                    <div class="icon">
+                        <center>
+                        <i class='bx bxs-user-voice' style='font-size: 40px; color: white;'></i></i><br>
+                            Layanan         
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <section style="text-align: center;" id="tentang">
         <h4 class="text-center">Tentang <i class='bx bx-cog' style='font-size: 20px; color: black'></i></h4>
-        <h7>Lihat Artikel <i class='bx bx-right-arrow-circle'></i></h7>
         <br><br>
         <a href="" class="signup-button">Sejarah/Profil</a><br><br><br>
         <a href="" class="login-button">Visi, Misi, dan Tujuan</a><br><br><br>
